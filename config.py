@@ -1,4 +1,5 @@
 from typing import List
+import streamlit as st
 
 # Available languages for translation
 AVAILABLE_LANGUAGES: List[str] = [
@@ -41,13 +42,13 @@ MODEL_DISPLAY_NAMES = list(MODEL_CONFIG.values())
 # Translation API Configuration
 TRANSLATION_API_CONFIG = {
     "base_url": "https://fragma-api-dev.yanolja.com",
-    "api_key": "XXX",
+    "api_key": st.secrets["API_KEY"],
 }
 
 # OpenAI API Configuration
 OPENAI_API_CONFIG = {
     "base_url": "https://fragma-api.dev.yanolja.in/openai/deployments",
-    "api_key": "XXX",
+    "api_key": st.secrets["API_KEY"],
 }
 
 # HTTP Client Configuration
