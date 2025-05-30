@@ -3,8 +3,17 @@ import streamlit as st
 
 # Available languages for translation
 AVAILABLE_LANGUAGES: List[str] = [
-    "EN-US", "JA-JP", "KO-KR", "ZH-CN", "ZH-TW", "ES-ES", "FR-FR", "DE-DE",
-    "IT-IT", "PT-PT", "RU-RU"
+    "EN-US",
+    "JA-JP",
+    "KO-KR",
+    "ZH-CN",
+    "ZH-TW",
+    "ES-ES",
+    "FR-FR",
+    "DE-DE",
+    "IT-IT",
+    "PT-PT",
+    "RU-RU",
 ]
 
 # Language display names mapping
@@ -19,7 +28,7 @@ LANGUAGE_DISPLAY_NAMES = {
     "DE-DE": "German",
     "IT-IT": "Italian",
     "PT-PT": "Portuguese",
-    "RU-RU": "Russian"
+    "RU-RU": "Russian",
 }
 
 # Model configurations
@@ -30,7 +39,7 @@ MODEL_CONFIG = {
     "o3-mini": "O3 Mini",
     "gemini-15-pro": "Gemini 1.5 Pro",
     "gemini-15-flash": "Gemini 1.5 Flash",
-    "deepseek-chat": "DeepSeek Chat"
+    "deepseek-chat": "DeepSeek Chat",
 }
 
 # Technical model names for API endpoints

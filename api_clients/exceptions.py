@@ -1,3 +1,4 @@
 class APIError(Exception):
-  """Custom exception for API related errors"""
-  pass
+    """Custom exception for API related errors"""
+
+    pass
