@@ -70,7 +70,7 @@ class TranslationUI:
         # Add endpoint input at the top
         endpoint_url = st.text_input(
             "Translation API Endpoint",
-            value="https://fragma-api-dev.yanolja.com/pre/translate",
+            value="https://fragma-api.yanolja.com/pre/translate",
             help="Enter the complete endpoint URL for translation",
         )
 

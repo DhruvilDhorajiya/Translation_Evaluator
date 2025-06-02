@@ -50,16 +50,14 @@ MODEL_DISPLAY_NAMES = list(MODEL_CONFIG.values())
 
 # Translation API Configuration
 TRANSLATION_API_CONFIG = {
-    "base_url": "https://fragma-api-dev.yanolja.com",
-    # "api_key": st.secrets["API_KEY"],
-    "api_key": "5OSQZiZ2ELTtzJMrWjvsEWoq3tNvIvBNJa4Q8qwqSiNFZbgU8e",
+    "base_url": "https://fragma-api.yanolja.com",
+    "api_key": st.secrets["API_KEY"],
 }
 
 # OpenAI API Configuration
 OPENAI_API_CONFIG = {
-    "base_url": "https://fragma-api.dev.yanolja.in/openai/deployments",
-    # "api_key": st.secrets["API_KEY"],
-    "api_key": "5OSQZiZ2ELTtzJMrWjvsEWoq3tNvIvBNJa4Q8qwqSiNFZbgU8e",
+    "base_url": "https://fragma-api.yanolja.com/openai/deployments",
+    "api_key": st.secrets["API_KEY"],
 }
 
 # HTTP Client Configuration
