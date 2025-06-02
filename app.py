@@ -31,10 +31,10 @@ class TranslationUI:
     1. **Input Text & Languages**
        - Enter your text
        - Select source and target languages
-       - Optionally customize the API endpoint
+       - Optionally provide a custom API endpoint (default endpoint will be used if not specified)
     
     2. **Reference Translation**
-       - Text is sent to the provided endpoint
+       - Text is sent to the translation endpoint
        - Translation is received and used as reference
     
     3. **LLM Translation** (if enabled)
@@ -69,9 +69,9 @@ class TranslationUI:
         """Render the input section and return user inputs."""
         # Add endpoint input at the top
         endpoint_url = st.text_input(
-            "Translation API Endpoint",
-            value="https://fragma-api.yanolja.com/pre/translate",
-            help="Enter the complete endpoint URL for translation",
+            "Translation API Endpoint (Optional)",
+            value="",
+            help="Optional: Enter a custom endpoint URL for translation. If left empty, the default endpoint will be used.",
         )
 
         text_input = st.text_area(
